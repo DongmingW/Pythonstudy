@@ -9,6 +9,7 @@ conn = 'mssql+pymssql://{}:{}@{}:{}/{}?charset=utf8'.format(user, password, serv
 engine = create_engine(conn)
 SQLcmd = "SQL语句"
 result = pd.read_sql(sql = SQLcmd, con = engine)
+pd.io.sql.to_sql(dfgc4g2, name = 'L_all', con = engine, if_exists = 'replace', index = False)
 
 #PD显示格式设置
 pd.set_option('display.max_columns', None)
