@@ -1,0 +1,213 @@
+<Capabilities xmlns="http://www.opengis.net/wmts/1.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml" xsi:schemaLocation="http://www.opengis.net/wmts/1.0 ../wmtsGetCapabilities_response.xsd" version="1.0.0">
+<ows:ServiceIdentification>
+<ows:Title>山东影像地图</ows:Title>
+<ows:Abstract>山东影像地图</ows:Abstract>
+<ows:Keywords>
+<ows:Keyword>山东</ows:Keyword>
+<ows:Keyword>影像地图</ows:Keyword>
+</ows:Keywords>
+<ows:ServiceType>OGC WMTS</ows:ServiceType>
+<ows:ServiceTypeVersion>1.0.0</ows:ServiceTypeVersion>
+<ows:Fees>none</ows:Fees>
+<ows:AccessConstraints>none</ows:AccessConstraints>
+</ows:ServiceIdentification>
+<ows:ServiceProvider>
+<ows:ProviderName>山东省国土测绘院</ows:ProviderName>
+<ows:ProviderSite xlink:href="http://www.sdmap.gov.cn/"/>
+<ows:ServiceContact>
+<ows:IndividualName/>
+<ows:PositionName/>
+<ows:ContactInfo>
+<ows:Phone>
+<ows:Voice/>
+<ows:Facsimile/>
+</ows:Phone>
+<ows:Address>
+<ows:DeliveryPoint>山东省济南市经十东路临港南区2301号</ows:DeliveryPoint>
+<ows:City>济南</ows:City>
+<ows:AdministrativeArea>E座4楼</ows:AdministrativeArea>
+<ows:PostalCode>250100</ows:PostalCode>
+<ows:Country>中国</ows:Country>
+<ows:ElectronicMailAddress/>
+</ows:Address>
+</ows:ContactInfo>
+</ows:ServiceContact>
+</ows:ServiceProvider>
+<ows:OperationsMetadata>
+<ows:Operation name="GetCapabilities">
+<ows:DCP>
+<ows:HTTP>
+<ows:Get xlink:href="http://www.sdmap.gov.cn/tileservice/SDRasterPubMap">
+<ows:Constraint name="GetEncoding">
+<ows:AllowedValues>
+<ows:Value>KVP</ows:Value>
+</ows:AllowedValues>
+</ows:Constraint>
+</ows:Get>
+<ows:Post xlink:href="http://www.maps.bob/maps.cgi?">
+<ows:Constraint name="PostEncoding">
+<ows:AllowedValues>
+<ows:Value>SOAP</ows:Value>
+</ows:AllowedValues>
+</ows:Constraint>
+</ows:Post>
+</ows:HTTP>
+</ows:DCP>
+</ows:Operation>
+<ows:Operation name="GetTile">
+<ows:DCP>
+<ows:HTTP>
+<ows:Get xlink:href="http://www.sdmap.gov.cn/tileservice/SDRasterPubMap">
+<ows:Constraint name="GetEncoding">
+<ows:AllowedValues>
+<ows:Value>KVP</ows:Value>
+</ows:AllowedValues>
+</ows:Constraint>
+</ows:Get>
+</ows:HTTP>
+</ows:DCP>
+</ows:Operation>
+</ows:OperationsMetadata>
+<Contents>
+<Layer>
+<ows:Title>山东影像地图</ows:Title>
+<ows:Abstract>山东影像地图</ows:Abstract>
+<ows:Identifier>SDRasterPubMap</ows:Identifier>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>114.229839088925 33.9389305555556</ows:LowerCorner>
+<ows:UpperCorner>123.400530149205 38.9048194444444</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+<BoundingBox>
+<ows:LowerCorner>33.9389305555556 114.229839088925</ows:LowerCorner>
+<ows:UpperCorner>38.9048194444444 123.400530149205</ows:UpperCorner>
+<ows:crs>EPSG:4490</ows:crs>
+</BoundingBox>
+<ows:Metadata xlink:href="http://www.maps.bob/etopo2/ metadata.htm"/>
+<Style isDefault="true">
+<ows:Title>default</ows:Title>
+<ows:Identifier>default</ows:Identifier>
+<LegendURL format="image/jpeg" xlink:href="http://www.maps.bob/etopo2/legend.png"/>
+</Style>
+<InfoFormat>application/gml+xml; version=3.1</InfoFormat>
+<TileMatrixSetLink>
+<TileMatrixSet>raster</TileMatrixSet>
+</TileMatrixSetLink>
+<Format>image/jpeg</Format>
+<TileMatrixSetLink xmlns="">
+<TileMatrixSet>raster</TileMatrixSet>
+</TileMatrixSetLink>
+</Layer>
+<TileMatrixSet>
+<ows:Identifier>raster</ows:Identifier>
+<ows:SupportedCRS>EPSG:4490</ows:SupportedCRS>
+<TileMatrix>
+<ows:Identifier>7</ows:Identifier>
+<ScaleDenominator>4622334</ScaleDenominator>
+<TopLeftCorner>-180 90</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>6</MatrixWidth>
+<MatrixHeight>4</MatrixHeight>
+</TileMatrix>
+<TileMatrix>
+<ows:Identifier>8</ows:Identifier>
+<ScaleDenominator>2311166.84</ScaleDenominator>
+<TopLeftCorner>-180 90</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>6</MatrixWidth>
+<MatrixHeight>4</MatrixHeight>
+</TileMatrix>
+<TileMatrix>
+<ows:Identifier>9</ows:Identifier>
+<ScaleDenominator>1155583.42</ScaleDenominator>
+<TopLeftCorner>-180 90</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>6</MatrixWidth>
+<MatrixHeight>4</MatrixHeight>
+</TileMatrix>
+<TileMatrix>
+<ows:Identifier>10</ows:Identifier>
+<ScaleDenominator>577791.71</ScaleDenominator>
+<TopLeftCorner>-180 90</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>6</MatrixWidth>
+<MatrixHeight>4</MatrixHeight>
+</TileMatrix>
+<TileMatrix>
+<ows:Identifier>11</ows:Identifier>
+<ScaleDenominator>288895.85</ScaleDenominator>
+<TopLeftCorner>-180 90</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>6</MatrixWidth>
+<MatrixHeight>4</MatrixHeight>
+</TileMatrix>
+<TileMatrix>
+<ows:Identifier>12</ows:Identifier>
+<ScaleDenominator>144447.93</ScaleDenominator>
+<TopLeftCorner>-180 90</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>6</MatrixWidth>
+<MatrixHeight>4</MatrixHeight>
+</TileMatrix>
+<TileMatrix>
+<ows:Identifier>13</ows:Identifier>
+<ScaleDenominator>72223.96</ScaleDenominator>
+<TopLeftCorner>-180 90</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>6</MatrixWidth>
+<MatrixHeight>4</MatrixHeight>
+</TileMatrix>
+<TileMatrix>
+<ows:Identifier>14</ows:Identifier>
+<ScaleDenominator>36111.98</ScaleDenominator>
+<TopLeftCorner>-180 90</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>6</MatrixWidth>
+<MatrixHeight>4</MatrixHeight>
+</TileMatrix>
+<TileMatrix>
+<ows:Identifier>15</ows:Identifier>
+<ScaleDenominator>18055.99</ScaleDenominator>
+<TopLeftCorner>-180 90</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>6</MatrixWidth>
+<MatrixHeight>4</MatrixHeight>
+</TileMatrix>
+<TileMatrix>
+<ows:Identifier>16</ows:Identifier>
+<ScaleDenominator>9028</ScaleDenominator>
+<TopLeftCorner>-180 90</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>6</MatrixWidth>
+<MatrixHeight>4</MatrixHeight>
+</TileMatrix>
+<TileMatrix>
+<ows:Identifier>17</ows:Identifier>
+<ScaleDenominator>4514</ScaleDenominator>
+<TopLeftCorner>-180 90</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>6</MatrixWidth>
+<MatrixHeight>4</MatrixHeight>
+</TileMatrix>
+<TileMatrix>
+<ows:Identifier>18</ows:Identifier>
+<ScaleDenominator>2257</ScaleDenominator>
+<TopLeftCorner>-180 90</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>6</MatrixWidth>
+<MatrixHeight>4</MatrixHeight>
+</TileMatrix>
+</TileMatrixSet>
+</Contents>
+</Capabilities>
