@@ -80,7 +80,7 @@
 <BoundingBox>
 <ows:LowerCorner>33.9389305555556 114.229839088925</ows:LowerCorner>
 <ows:UpperCorner>38.9048194444444 123.400530149205</ows:UpperCorner>
-<ows:crs>EPSG:4490</ows:crs>
+<ows:crs>EPSG:4326</ows:crs>
 </BoundingBox>
 <ows:Metadata xlink:href="http://www.maps.bob/etopo2/ metadata.htm"/>
 <Style isDefault="true">
@@ -99,7 +99,7 @@
 </Layer>
 <TileMatrixSet>
 <ows:Identifier>raster</ows:Identifier>
-<ows:SupportedCRS>EPSG:4490</ows:SupportedCRS>
+<ows:SupportedCRS>EPSG:4326</ows:SupportedCRS>
 <TileMatrix>
 <ows:Identifier>7</ows:Identifier>
 <ScaleDenominator>4622334</ScaleDenominator>
